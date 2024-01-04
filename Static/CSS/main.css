@@ -1,1 +1,27 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  background: rgb(84, 84, 84);
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.TopNav {
+  background-color: rgb(24, 24, 24);
+}
+.TopNav .logo {
+  width: 20%;
+  height: 20%;
+}
+.TopNav nav {
+  display: none;
+}
+.TopNav .container {
+  display: flex;
+  place-content: space-between;
+}
+.TopNav .mobile-menu {
+  filter: invert(100%);
+  padding: 1em 1em 0 0;
+  width: 12%;
+  height: 12%;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
