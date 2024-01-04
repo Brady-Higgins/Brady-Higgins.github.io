@@ -36,11 +36,11 @@
     <section class="hero">
         <div class="container">
             <div class="left-column" style="--n:53">
-                <div class="body-text">
+            <div class="body-text">
                 <span class="type" onAnimationEnd="showAfter()">Hi there!<br>I'm Brady,<br>software engineer.</span>
             </div>
             <div class="show-after">
-            <h2>Undergraduate CS Student at UMN</h2>
+                <h2>Undergraduate CS Student at UMN</h2>
             </div>
             </div>
         </div>
@@ -71,7 +71,8 @@
 
 <script>
 function showAfter() {
-      document.querySelector('.show-after').classList.add('show-after');
+      document.querySelector('.show-after').classList.add('visible');
+    console.log("show after function call")
     }
 </script>
 </body>

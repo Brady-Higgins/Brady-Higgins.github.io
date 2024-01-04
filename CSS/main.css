@@ -61,10 +61,15 @@ ul {
     background-position: 0 -100%, 0 0;
   }
 }
-.hero h2 {
+.hero .show-after {
   display: none;
+}
+.hero .show-after.visible {
+  display: block;
+}
+.hero h2 {
   font-family: monospace;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(106, 104, 104);
 }/*# sourceMappingURL=main.css.map */
