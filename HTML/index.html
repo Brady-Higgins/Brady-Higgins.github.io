@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braydon Higgins</title>
     <link rel="icon" href="../Assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
     <div class="TopNav">
@@ -35,12 +35,13 @@
 
     <section class="hero">
         <div class="container">
-            <div class="left-column">
-                <div class="text-line">Hi there!</div>
-                <div class="text-line">I'm Braydon Higgins,</div>
-                <div class="text-line">software engineer.</div>
-                <div class="text-line">Undergraduate CS student at UMN</div>
-                
+            <div class="left-column" style="--n:53">
+                <div class="body-text">
+                <span class="type" onAnimationEnd="showAfter()">Hi there!<br>I'm Brady,<br>software engineer.</span>
+            </div>
+            <div class="show-after">
+            <h2>Undergraduate CS Student at UMN</h2>
+            </div>
             </div>
         </div>
     </section>
@@ -67,5 +68,11 @@
             </ul>
         </div>
     </section>
+
+<script>
+function showAfter() {
+      document.querySelector('.show-after').classList.add('show-after');
+    }
+</script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 
 body{
-    background: rgb(84, 84, 84);
+    background: #201c1c;
     margin: 0;
     font-family: 'Roboto';
 }
@@ -30,3 +30,52 @@ body{
         cursor: pointer;
     }
 }
+
+ul{
+    list-style-type: none ;
+    padding: 0;
+    margin: 0;
+}
+.hero{
+
+.left-column{
+  margin-top: 1em;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  font-size:50px;
+  padding:20px;
+  background:#201c1c;
+  color:#ffffff
+
+}
+.type {
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#ffffff 5px,#0000 0) 10px 0,
+      linear-gradient(#ffffff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+     b .7s infinite steps(1),   
+     t calc(var(--n)*.3s) steps(var(--n)) forwards;
+  }
+  
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+  h2{
+    display: none;
+    font-family: monospace;
+    font-weight: 700;
+    font-size:50px;
+    color: rgb(106, 104, 104);
+  }
+}
+ 
+    
