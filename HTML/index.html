@@ -40,7 +40,8 @@
                 <span class="type" onAnimationEnd="showAfter()">Hi there!<br>I'm Brady,<br>software engineer.</span>
             </div>
             <div class="show-after">
-                <h2>Undergraduate CS Student at UMN</h2>
+                <a href="contact.html"><h2 class="contact-me">Contact Me</h2></a>
+                <h2 class="school">Undergraduate CS Student at UMN</h2>
             </div>
             </div>
         </div>
@@ -69,11 +70,16 @@
         </div>
     </section>
 
-<script>
-function showAfter() {
-      document.querySelector('.show-after').classList.add('visible');
-    console.log("show after function call")
-    }
-</script>
+    <script>
+        const delay = 12000;
+        //add visble after time delay
+        function showAfter() {
+            setTimeout(() => {
+                document.querySelector('.show-after').classList.add('visible');
+            }, delay);
+        }
+        //call once page loads
+        document.addEventListener('DOMContentLoaded', showAfter);
+    </script>
 </body>
 </html>
