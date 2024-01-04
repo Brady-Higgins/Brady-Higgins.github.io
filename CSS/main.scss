@@ -9,6 +9,7 @@ body{
 }
 
 .TopNav{
+  
   background-color: rgb(24, 24, 24);
 
   .logo{
@@ -112,19 +113,27 @@ h2{
   color: white;
   padding-left: 5%;
   h1{
+    text-decoration: underline;
     span{
       color: var(--primary-color);
     }
   }
   margin: 25em 0 0 0;
   .text-line{
+    font-size: 20px;
+    margin-top: .8em;
     color: white;
+
+    span{
+      font: bold;
+      color: var(--primary-color);
+    }
   }
 }
 
 .Connect{
   font-size: small;
-  margin: 4em 0 0 2em;
+  margin: 6em 0 0 2em;
   h1{
     color: white;
 
@@ -132,10 +141,16 @@ h2{
       color: var(--primary-color);
     }
   }
+  ul{
+    display: flex;
+    margin-left: 0;
+  }
   .github-icon{
-    width: 10%;
+    width: 5em;
+    
   }
   .linkedin-icon{
-    width: 10%;
+    width: 5em;
+    filter: invert(100%);
   }
 }
