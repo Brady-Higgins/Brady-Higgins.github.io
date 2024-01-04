@@ -59,7 +59,7 @@ color:#ffffff
   background-repeat:no-repeat;
   animation: 
    b .7s infinite steps(1),   
-   t calc(var(--n)*.3s) steps(var(--n)) forwards;
+   t calc(var(--n)*.24s) steps(var(--n)) forwards;
 }
 
 @keyframes t{
@@ -78,15 +78,15 @@ color:#ffffff
   font-family: monospace;
   font-weight: 700;
   font-size:30px;
-  color: rgb(234, 160, 21);
+  color: rgb(255, 255, 255);
   position: relative;
 }
 .contact-me::before,
 .contact-me::after {
     cursor: pointer;
-    content: '';
+    content: 'Contact Me';
     position: absolute;
-    background-color: transparent;
+    background-color: rgb(234, 160, 21);
     border: 2px solid rgb(234, 160, 21);
 }
 
@@ -117,4 +117,10 @@ h2{
   font-size:30px;
   color: rgb(106, 104, 104);
 }
+}
+
+.Intro{
+  .text-line{
+    color: white;
+  }
 }
