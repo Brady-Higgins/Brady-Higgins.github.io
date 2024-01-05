@@ -1,0 +1,57 @@
+.hero{
+    .form{
+        padding: 2em;
+        margin-top: 1em;
+        display: block;
+        gap: 1em;
+        align-items: center;
+        span{
+            color: rgb(45, 199, 45);
+        }
+        font-size: 30px;
+        input, textarea{
+            width: 100%;
+            
+        }
+        textarea{
+            height: 15vh;
+        }
+        button{
+            width: 20%;
+        }
+    }
+
+    .further-cta{
+        h2{
+            font-size: large;
+            span{
+               color: rgb(45, 199, 45);
+            }
+        }
+        
+        .icons{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+        ul{
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            
+        }
+        .github-icon{
+            width: 3em;
+        }
+        .linkedin-icon{
+            margin-left: 1em;
+            filter: invert(100%);
+            width: 3em;
+        }
+    }
+    }
+}

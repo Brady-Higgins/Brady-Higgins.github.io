@@ -4,16 +4,19 @@ body {
   font-family: "Roboto";
 }
 
-.hero .show-after .visible-about-me {
-  margin-top: 1em;
-  display: grid;
-  font-size: 30px;
+.hero .chat-cta h2 {
+  margin-top: 2em;
   color: white;
-  padding: 1em;
-  width: 80%;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
+  text-align: center;
+  font-size: x-large;
+}
+.hero .chat-cta h2 span {
+  color: rgb(45, 199, 45);
+}
+.hero .chat-cta img {
+  display: block; /* Ensure the image is treated as a block-level element */
+  margin: 0 auto; /* Set margin to 'auto' to center the image horizontally */
+  filter: invert(100%);
+  width: 15%;
+  margin-top: 1em;
 }/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,47 @@
+.hero .form {
+  padding: 2em;
+  margin-top: 1em;
+  display: block;
+  gap: 1em;
+  align-items: center;
+  font-size: 30px;
+}
+.hero .form span {
+  color: rgb(45, 199, 45);
+}
+.hero .form input, .hero .form textarea {
+  width: 100%;
+}
+.hero .form textarea {
+  height: 15vh;
+}
+.hero .form button {
+  width: 20%;
+}
+.hero .further-cta h2 {
+  font-size: large;
+}
+.hero .further-cta h2 span {
+  color: rgb(45, 199, 45);
+}
+.hero .further-cta .icons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero .further-cta .icons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.hero .further-cta .icons li {
+  list-style-type: none;
+}
+.hero .further-cta .icons .github-icon {
+  width: 3em;
+}
+.hero .further-cta .icons .linkedin-icon {
+  margin-left: 1em;
+  filter: invert(100%);
+  width: 3em;
+}/*# sourceMappingURL=contact.css.map */
