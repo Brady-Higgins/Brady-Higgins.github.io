@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Braydon Higgins</title>
+    <link rel="icon" href="../Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/about.css">
 </head>
 <body>
+    <div class="TopNav">
+        <div class="container">
+            <img src="..\Assets\logo.png" alt="logo" class="logo">
+            <img id="mobile-menu" class="mobile-menu" src="../Assets/menu-icon.png" alt="Open Navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="../Assets/exit-icon.png" alt="close navigation">
     
+                <ul class="primary-nav">
+                    <li><a href="../HTML/index.html"><img src="../Assets/home-icon.png" alt="home icon"><span>Home</span></a>
+                    </li>
+                    <li><a href="../HTML/experience.html"><img src="../Assets/experience-icon.png" alt="work experience icon"><span>Work Experience</span></a>
+                    </li>
+                    <li><a href="../HTML/about.html"> <img src="..\Assets\about-me-icon.png" alt="about me icon"><span>About Me</span></a>
+                    </li>
+                    <li><a href="../HTML/contact.html"> <img src="../Assets/contact-me-icon.png" alt="contact me icon"><span>Contact Me</span></a>
+                    </li>
+                    <li><a href="https://github.com/Brady-Higgins/Brady-Higgins.github.io"><img src="../Assets/code-icon.png" alt="source code icon"><span>Code</span></a></li>
+                </ul>
+    
+                
+            </nav>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <div class="left-column" style="--n:53">
+            <div class="type-back"><span class="type">About Me.</span></div>
+            
+            </div>
+            <div class="show-after">
+                <div class="text-line">I'm Braydon Higgins, but I go by Brady. I'm a computer science student at the Unviersity of Minnesota.</div>
+                <div class="text-line">Software engineering has been the outlet for my desire to continuously learn and use my knowledge to solve difficult problems.</div>
+                <div class="text-line">I'd love to work and learn among other passionate backend or full-stack developers. <br></div>
+                <div class="text-line">In my spare time, I enjoy keeping up with the ever evolving field of machine learning, coding personal projects, and doing my best to be a well rounded individual.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const delay = 2500;
+        
+        //add visble after time delay
+        function showAfter() {
+            setTimeout(() => {
+                document.querySelector('.show-after').classList.add('visible-about-me');
+            }, delay);
+        }
+        // call once page loads
+        document.addEventListener('DOMContentLoaded', showAfter);
+
+        //mobile menu navigation
+        const mobileBtn = document.getElementById('mobile-menu')
+            nav = document.querySelector('nav');
+            mobileBtnExit = document.getElementById('mobile-exit')
+
+        mobileBtn.addEventListener('click', ()=>{
+            nav.classList.add('menu-btn')
+        })
+        mobileBtnExit.addEventListener('click', ()=>{
+            nav.classList.remove('menu-btn')
+        })
+    </script>
 </body>
 </html>

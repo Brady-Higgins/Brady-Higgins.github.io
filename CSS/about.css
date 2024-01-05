@@ -1,1 +1,17 @@
-/*# sourceMappingURL=about.css.map */
+body {
+  background: #201c1c;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.hero .show-after.visible-about-me {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 30px;
+  color: white;
+  padding-bottom: 3em;
+}
+.hero .show-after.visible-about-me .text-line {
+  margin-top: 2em;
+}/*# sourceMappingURL=about.css.map */

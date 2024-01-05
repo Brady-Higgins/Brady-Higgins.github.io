@@ -120,6 +120,18 @@ body {
   filter: invert(100%);
 }
 
+body {
+  background: #201c1c;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.hero .show-after.visible-about-me {
+  display: block;
+  font-size: 80px;
+  color: white;
+}
+
 .TopNav {
   background-color: rgb(24, 24, 24);
 }
