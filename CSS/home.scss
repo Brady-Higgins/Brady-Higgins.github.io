@@ -1,0 +1,130 @@
+:root{
+    --primary-color: rgb(45, 199, 45);
+  }
+  
+  body{
+    background: #201c1c;
+    margin: 0;
+    font-family: 'Roboto';
+  }
+  
+  
+  .hero{
+    padding: 0;
+    margin: 0;
+  .left-column{
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 48px;
+  padding: 0;
+  background:#201c1c;
+  color:#ffffff
+  
+  }
+  .type {
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#ffffff 5px,#0000 0) 10px 0,
+      linear-gradient(#ffffff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+     b .7s infinite steps(1),   
+     t calc(var(--n)*.24s) steps(var(--n)) forwards;
+  }
+  
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+  .show-after{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .show-after.visible{
+    display: block;
+  }
+  .contact-me{
+    width: 100%;
+    font-family: monospace;
+    font-weight: 700;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    border: 5px solid var(--primary-color);
+    background: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .school{
+    font-family: monospace;
+    font-weight: 700;
+    font-size:30px;
+    color: rgb(106, 104, 104);
+  }
+  h2{
+    font-family: monospace;
+    font-weight: 700;
+    font-size:30px;
+    color: rgb(106, 104, 104);
+  }
+  }
+  
+  .Intro{
+    position:initial;
+    color: white;
+    padding-left: 5%;
+    h1{
+      text-decoration: underline;
+      span{
+        color: var(--primary-color);
+      }
+    }
+    margin: 25em 0 0 0;
+    .text-line{
+      font-size: 20px;
+      margin-top: .8em;
+      color: white;
+  
+      span{
+        font: bold;
+        color: var(--primary-color);
+      }
+    }
+  }
+  
+  .Connect{
+    font-size: small;
+    margin: 6em 0 0 2em;
+    h1{
+      color: white;
+  
+      span{
+        color: var(--primary-color);
+      }
+    }
+    ul{
+      display: flex;
+      margin-left: 0;
+    }
+    .github-icon{
+      width: 5em;
+      
+    }
+    .linkedin-icon{
+      width: 5em;
+      filter: invert(100%);
+    }
+  }
+  
+  
