@@ -1,0 +1,57 @@
+.hero .projects {
+  text-align: center;
+  color: white;
+  margin-top: 6em;
+}
+.hero .projects .project1 span {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .projects .project1 img {
+  width: 100%;
+}
+.hero .projects .project2 {
+  margin-top: 10em;
+}
+.hero .projects .project2 span {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .projects .project2 img {
+  width: 100%;
+}
+.hero .projects .other-projects {
+  margin-top: 10em;
+}
+.hero .projects .other-projects h2 {
+  font-size: large;
+}
+.hero .projects .other-projects ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero .projects .other-projects .github-icon {
+  width: 5em;
+}
+.hero .projects .other-projects .linkedin-icon {
+  margin-left: 1em;
+  width: 5em;
+  filter: invert(100%);
+}
+.hero .projects .other-projects .email {
+  margin-left: 1em;
+  width: 5em;
+  filter: invert(100%);
+}
+.hero .projects .other-projects span {
+  color: rgb(45, 199, 45);
+}/*# sourceMappingURL=experience.css.map */

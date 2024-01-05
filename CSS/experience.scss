@@ -1,0 +1,63 @@
+.hero{
+    
+    .projects{
+        text-align: center;
+        color: white;
+        margin-top: 6em;
+        .project1{
+            span{
+                text-decoration: none;
+                color: white;
+                font-size: x-large;
+                font-weight: bold;
+                text-decoration: underline rgb(45, 199, 45);
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .project2{
+            margin-top: 10em;
+            span{
+                text-decoration: none;
+                color: white;
+                font-size: x-large;
+                font-weight: bold;
+                text-decoration: underline rgb(45, 199, 45);
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .other-projects{
+            margin-top: 10em;
+            h2{
+                font-size: large;
+            }
+            ul{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                
+            }
+            .github-icon{
+
+                width: 5em;
+            }
+            .linkedin-icon{
+                margin-left: 1em;
+                width: 5em;
+                filter: invert(100%);
+                
+            }
+            .email{
+                margin-left: 1em;
+                width: 5em;
+                filter: invert(100%);
+            }
+            span{
+                color: rgb(45, 199, 45);
+            }
+        }
+    }
+}
