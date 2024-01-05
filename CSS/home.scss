@@ -53,7 +53,10 @@
   }
   .show-after.visible{
     display: block;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
   }
+  
   .contact-me{
     width: 100%;
     font-family: monospace;

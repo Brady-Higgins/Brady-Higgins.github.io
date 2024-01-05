@@ -4,14 +4,16 @@ body {
   font-family: "Roboto";
 }
 
-.hero .show-after.visible-about-me {
-  margin: 0;
-  padding: 0;
-  display: block;
+.hero .show-after .visible-about-me {
+  margin-top: 1em;
+  display: grid;
   font-size: 30px;
   color: white;
-  padding-bottom: 3em;
-}
-.hero .show-after.visible-about-me .text-line {
-  margin-top: 2em;
+  padding: 1em;
+  width: 80%;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }/*# sourceMappingURL=about.css.map */

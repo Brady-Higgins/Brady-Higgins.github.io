@@ -51,6 +51,8 @@ body {
 }
 .hero .show-after.visible {
   display: block;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 .hero .contact-me {
   width: 100%;
