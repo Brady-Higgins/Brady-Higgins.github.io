@@ -1,0 +1,64 @@
+.hero{
+    padding: 0;
+    margin: 0;
+  .left-column{
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 48px;
+    padding: 0;
+    background:#201c1c;
+    color:#ffffff
+  }
+  .type {
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#ffffff 5px,#0000 0) 10px 0,
+      linear-gradient(#ffffff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+     b .7s infinite steps(1),   
+     t calc(var(--n)*.24s) steps(var(--n)) forwards;
+  }
+  
+  @keyframes t{
+    from {background-size:0 200%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
+  .show-after{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .show-after.visible{
+    margin-top: 1em;
+    display: block;
+    font-size: 30px;
+    color: white;
+    padding: 1em;
+    width: 80%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

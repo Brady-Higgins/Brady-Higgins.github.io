@@ -1,13 +1,14 @@
 
-body{
-    background: #201c1c;
-    margin: 0;
-    font-family: 'Roboto';
-  }
-
 .hero{
+  .show-after{
+    .text-line{
+      padding-top: 2em;
+      width: 100%;
+      text-align: center; 
+      
+    }
+  }
   .chat-cta{
-    
     h2{
       margin-top: 2em;
       color: white;
@@ -18,8 +19,8 @@ body{
       }
     }
     img{
-      display: block; /* Ensure the image is treated as a block-level element */
-      margin: 0 auto; /* Set margin to 'auto' to center the image horizontally */
+      display: block; 
+      margin: 0 auto; 
       filter: invert(100%);
       width: 15%;
       margin-top: 1em;

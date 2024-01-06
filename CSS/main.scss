@@ -1,3 +1,16 @@
-@import 'home';
-@import 'about';
+@import 'config';
 @import 'navbar';
+@import 'animation';
+@import 'about';
+@import 'experience';
+@import 'home';
+@import 'contact';
+
+body{
+    background: #201c1c;
+    margin: 0;
+    font-family: 'Roboto';
+  }
+  
+
+

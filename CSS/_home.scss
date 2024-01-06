@@ -1,0 +1,78 @@
+@import 'config';
+  
+  .contact-me{
+    width: 100%;
+    font-family: monospace;
+    font-weight: 700;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    border: 5px solid $primary-color;
+    background: $primary-color;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .school{
+    margin-top: 1.5em;
+    box-sizing: content-box;
+    font-family: monospace;
+    font-weight: 700;
+    font-size:30px;
+    color: rgb(106, 104, 104);
+  }
+  h2{
+    font-family: monospace;
+    font-weight: 700;
+    font-size:30px;
+    color: rgb(106, 104, 104);
+  }
+  
+  
+  .Intro{
+    position:initial;
+    color: white;
+    padding-left: 5%;
+    h1{
+      text-decoration: underline;
+      span{
+        color: $primary-color;
+      }
+    }
+    margin: 25em 0 0 0;
+    .text-line{
+      font-size: 20px;
+      margin-top: .8em;
+      color: white;
+  
+      span{
+        font: bold;
+        color: $primary-color;
+      }
+    }
+  }
+  
+  .Connect{
+    font-size: small;
+    margin: 6em 0 0 2em;
+    h1{
+      color: white;
+  
+      span{
+        color: $primary-color;
+      }
+    }
+    ul{
+      display: flex;
+      margin-left: 0;
+    }
+    .github-icon{
+      width: 5em;
+      
+    }
+    .linkedin-icon{
+      width: 5em;
+      filter: invert(100%);
+    }
+  }
+  
+  

@@ -1,180 +1,7 @@
-:root {
-  --primary-color: rgb(45, 199, 45);
-}
-
-body {
-  background: #201c1c;
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: "Roboto";
-}
-
-.hero {
   padding: 0;
-  margin: 0;
-}
-.hero .left-column {
-  margin-top: 1em;
-  width: 100%;
-  text-align: center;
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 48px;
-  padding: 0;
-  background: #201c1c;
-  color: #ffffff;
-}
-.hero .type {
-  color: rgba(0, 0, 0, 0);
-  background: linear-gradient(-90deg, #ffffff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#ffffff 0 0) 0 0;
-  background-size: calc(var(--n) * 1ch) 200%;
-  -webkit-background-clip: padding-box, text;
-  background-clip: padding-box, text;
-  background-repeat: no-repeat;
-  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.24s) steps(var(--n)) forwards;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes t {
-  from {
-    background-size: 0 200%;
-  }
-}
-@keyframes b {
-  50% {
-    background-position: 0 -100%, 0 0;
-  }
-}
-.hero .show-after {
-  display: none;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.hero .show-after.visible {
-  display: block;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-  margin-top: 1em;
-  display: grid;
-  font-size: 30px;
-  color: white;
-  padding: 1em;
-  width: 80%;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-.hero .contact-me {
-  width: 100%;
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  border: 5px solid var(--primary-color);
-  background: var(--primary-color);
-  text-decoration: none;
-  display: inline-block;
-}
-.hero .school {
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 30px;
-  color: rgb(106, 104, 104);
-}
-.hero h2 {
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 30px;
-  color: rgb(106, 104, 104);
-}
-
-.Intro {
-  position: initial;
-  color: white;
-  padding-left: 5%;
-  margin: 25em 0 0 0;
-}
-.Intro h1 {
-  text-decoration: underline;
-}
-.Intro h1 span {
-  color: var(--primary-color);
-}
-.Intro .text-line {
-  font-size: 20px;
-  margin-top: 0.8em;
-  color: white;
-}
-.Intro .text-line span {
-  font: bold;
-  color: var(--primary-color);
-}
-
-.Connect {
-  font-size: small;
-  margin: 6em 0 0 2em;
-}
-.Connect h1 {
-  color: white;
-}
-.Connect h1 span {
-  color: var(--primary-color);
-}
-.Connect ul {
-  display: flex;
-  margin-left: 0;
-}
-.Connect .github-icon {
-  width: 5em;
-}
-.Connect .linkedin-icon {
-  width: 5em;
-  filter: invert(100%);
-}
-
-body {
-  background: #201c1c;
-  margin: 0;
-  font-family: "Roboto";
-}
-
-
-
-.hero .show-after .visible {
-  margin-top: 1em;
-  display: grid;
-  font-size: 30px;
-  color: white;
-  padding: 1em;
-  
-  width: 80%;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-
-.hero .show-after .text-line2 {
-  padding-top: 2em;
-  width: 100%;
-  text-align: center; 
-}
-
-.hero .show-after iframe {
-  padding-top: 2em;
-  width: 100%;
-  height: 10em;
 }
 
 .TopNav {
@@ -246,4 +73,279 @@ nav li a {
 }
 nav li a:hover {
   font-weight: bold;
+}
+
+.hero {
+  padding: 0;
+  margin: 0;
+}
+.hero .left-column {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 48px;
+  padding: 0;
+  background: #201c1c;
+  color: #ffffff;
+}
+.hero .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #ffffff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#ffffff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.24s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.hero .show-after {
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .show-after.visible {
+  margin-top: 1em;
+  display: block;
+  font-size: 30px;
+  color: white;
+  padding: 1em;
+  width: 80%;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero .show-after .text-line {
+  padding-top: 2em;
+  width: 100%;
+  text-align: center;
+}
+.hero .chat-cta h2 {
+  margin-top: 2em;
+  color: white;
+  text-align: center;
+  font-size: x-large;
+}
+.hero .chat-cta h2 span {
+  color: rgb(45, 199, 45);
+}
+.hero .chat-cta img {
+  display: block;
+  margin: 0 auto;
+  filter: invert(100%);
+  width: 15%;
+  margin-top: 1em;
+}
+
+.hero .projects {
+  text-align: center;
+  color: white;
+  margin-top: 6em;
+}
+.hero .projects .project1 span {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .projects .project1 img {
+  width: 100%;
+}
+.hero .projects .project2 {
+  margin-top: 10em;
+}
+.hero .projects .project2 span {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .projects .project2 img {
+  width: 100%;
+}
+.hero .projects .other-projects {
+  margin-top: 10em;
+}
+.hero .projects .other-projects h2 {
+  font-size: large;
+}
+.hero .projects .other-projects ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero .projects .other-projects .github-icon {
+  width: 5em;
+}
+.hero .projects .other-projects .linkedin-icon {
+  margin-left: 1em;
+  width: 5em;
+  filter: invert(100%);
+}
+.hero .projects .other-projects .email {
+  margin-left: 1em;
+  width: 5em;
+  filter: invert(100%);
+}
+.hero .projects .other-projects span {
+  color: rgb(45, 199, 45);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-me {
+  width: 100%;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(45, 199, 45);
+  background: rgb(45, 199, 45);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.school {
+  margin-top: 1.5em;
+  box-sizing: content-box;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(106, 104, 104);
+}
+
+h2 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(106, 104, 104);
+}
+
+.Intro {
+  position: initial;
+  color: white;
+  padding-left: 5%;
+  margin: 25em 0 0 0;
+}
+.Intro h1 {
+  text-decoration: underline;
+}
+.Intro h1 span {
+  color: rgb(45, 199, 45);
+}
+.Intro .text-line {
+  font-size: 20px;
+  margin-top: 0.8em;
+  color: white;
+}
+.Intro .text-line span {
+  font: bold;
+  color: rgb(45, 199, 45);
+}
+
+.Connect {
+  font-size: small;
+  margin: 6em 0 0 2em;
+}
+.Connect h1 {
+  color: white;
+}
+.Connect h1 span {
+  color: rgb(45, 199, 45);
+}
+.Connect ul {
+  display: flex;
+  margin-left: 0;
+}
+.Connect .github-icon {
+  width: 5em;
+}
+.Connect .linkedin-icon {
+  width: 5em;
+  filter: invert(100%);
+}
+
+.hero .form {
+  padding: 2em;
+  margin-top: 1em;
+  display: block;
+  gap: 1em;
+  align-items: center;
+  font-size: 30px;
+}
+.hero .form span {
+  color: rgb(45, 199, 45);
+}
+.hero .form input, .hero .form textarea {
+  width: 100%;
+}
+.hero .form textarea {
+  height: 15vh;
+}
+.hero .form button {
+  width: 20%;
+}
+.hero .further-cta h2 {
+  font-size: large;
+}
+.hero .further-cta h2 span {
+  color: rgb(45, 199, 45);
+}
+.hero .further-cta .icons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero .further-cta .icons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.hero .further-cta .icons li {
+  list-style-type: none;
+}
+.hero .further-cta .icons .github-icon {
+  width: 3em;
+}
+.hero .further-cta .icons .linkedin-icon {
+  margin-left: 1em;
+  filter: invert(100%);
+  width: 3em;
+}
+
+body {
+  background: #201c1c;
+  margin: 0;
+  font-family: "Roboto";
 }/*# sourceMappingURL=main.css.map */

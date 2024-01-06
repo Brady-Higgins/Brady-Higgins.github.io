@@ -1,77 +1,31 @@
-:root {
-  --primary-color: rgb(45, 199, 45);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background: #201c1c;
-  margin: 0;
-  font-family: "Roboto";
-}
-
-.hero {
-  padding: 0;
-  margin: 0;
-}
-.hero .left-column {
-  margin-top: 1em;
-  width: 100%;
-  text-align: center;
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 48px;
-  padding: 0;
-  background: #201c1c;
-  color: #ffffff;
-}
-.hero .type {
-  color: rgba(0, 0, 0, 0);
-  background: linear-gradient(-90deg, #ffffff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#ffffff 0 0) 0 0;
-  background-size: calc(var(--n) * 1ch) 200%;
-  -webkit-background-clip: padding-box, text;
-  background-clip: padding-box, text;
-  background-repeat: no-repeat;
-  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.24s) steps(var(--n)) forwards;
-}
-@keyframes t {
-  from {
-    background-size: 0 200%;
-  }
-}
-@keyframes b {
-  50% {
-    background-position: 0 -100%, 0 0;
-  }
-}
-.hero .show-after {
-  display: none;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.hero .show-after.visible {
-  display: block;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-.hero .contact-me {
+.contact-me {
   width: 100%;
   font-family: monospace;
   font-weight: 700;
   font-size: 30px;
   color: rgb(255, 255, 255);
-  border: 5px solid var(--primary-color);
-  background: var(--primary-color);
+  border: 5px solid rgb(45, 199, 45);
+  background: rgb(45, 199, 45);
   text-decoration: none;
   display: inline-block;
 }
-.hero .school {
+
+.school {
+  margin-top: 1.5em;
+  box-sizing: content-box;
   font-family: monospace;
   font-weight: 700;
   font-size: 30px;
   color: rgb(106, 104, 104);
 }
-.hero h2 {
+
+h2 {
   font-family: monospace;
   font-weight: 700;
   font-size: 30px;
@@ -88,7 +42,7 @@ body {
   text-decoration: underline;
 }
 .Intro h1 span {
-  color: var(--primary-color);
+  color: rgb(45, 199, 45);
 }
 .Intro .text-line {
   font-size: 20px;
@@ -97,7 +51,7 @@ body {
 }
 .Intro .text-line span {
   font: bold;
-  color: var(--primary-color);
+  color: rgb(45, 199, 45);
 }
 
 .Connect {
@@ -108,7 +62,7 @@ body {
   color: white;
 }
 .Connect h1 span {
-  color: var(--primary-color);
+  color: rgb(45, 199, 45);
 }
 .Connect ul {
   display: flex;
