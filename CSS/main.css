@@ -67,7 +67,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .hero .show-after.visible {
     display: flex;
     margin-left: 2em;
@@ -155,7 +155,7 @@ nav li a:hover {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .TopNav .mobile-menu, .TopNav .mobile-menu-exit {
     display: none;
   }
@@ -166,6 +166,7 @@ nav li a:hover {
     width: 100%;
   }
   .TopNav nav {
+    box-sizing: content-box;
     margin-top: 2em;
     margin-left: 0;
     display: flex;
@@ -176,24 +177,6 @@ nav li a:hover {
     height: auto;
     width: 100%;
     padding: 0;
-  }
-  .TopNav nav img {
-    filter: invert(100%);
-  }
-  .TopNav nav .home-icon {
-    width: 2em;
-  }
-  .TopNav nav .experience-icon {
-    width: 2.5em;
-  }
-  .TopNav nav .about-icon {
-    width: 2em;
-  }
-  .TopNav nav .contact-icon {
-    width: 2.5em;
-  }
-  .TopNav nav .source-icon {
-    width: 2em;
   }
   .TopNav nav ul {
     color: white;
@@ -292,7 +275,7 @@ h2 {
   filter: invert(100%);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .hero .left-column {
     text-align: left;
     margin-left: 1.8em;
@@ -356,7 +339,7 @@ h2 {
   margin-top: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .hero .show-after .about-me-body {
     width: 60%;
     text-align: left;
@@ -436,7 +419,7 @@ h2 {
   color: rgb(45, 199, 45);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .hero .projects {
     width: 100vw;
   }
@@ -520,9 +503,25 @@ h2 {
   width: 3em;
 }
 
-@media only screen and (min-width: 768px) {
-  .hero .form {
-    width: 40vw;
+@media only screen and (min-width: 800px) {
+  .hero .reach-out-section {
+    width: 100%;
+  }
+  .hero .reach-out-section .form {
+    width: 20em;
+  }
+  .hero .reach-out-section .further-cta {
+    margin-left: 1.2em;
+  }
+  .hero .reach-out-section .further-cta .icons {
+    padding-top: 0.3em;
+    width: 4.5em;
+  }
+  .hero .reach-out-section .further-cta .icons .linkedin-icon {
+    width: 2em;
+  }
+  .hero .reach-out-section .further-cta .icons .github-icon {
+    width: 2em;
   }
 }
 body {

@@ -56,10 +56,28 @@
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 800px){
    .hero{
+    .reach-out-section{
+        
+        width: 100%;
     .form{
-        width: 40vw;
+        width: 20em;
+        
+    }
+    .further-cta{
+        margin-left: 1.2em;
+        .icons{
+            padding-top: .3em;
+            width: 4.5em;
+            .linkedin-icon{
+                width: 2em;
+            }
+            .github-icon{
+                width: 2em;
+            }
+        }
     }
    } 
+}
 }

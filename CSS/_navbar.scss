@@ -79,7 +79,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 800px){
     .TopNav{
       .mobile-menu,.mobile-menu-exit{
           display: none;
@@ -92,6 +92,8 @@
         
       }
       nav{
+        box-sizing: content-box;
+        
         margin-top: 2em;
         margin-left: 0;
         display: flex;
@@ -102,24 +104,24 @@
         height: auto;
         width: 100%;
         padding: 0;
-        img{
-          filter: invert(100%);
-        }
-        .home-icon{
-          width: 2em;
-        }
-        .experience-icon{
-          width: 2.5em;
-        }
-        .about-icon{
-          width: 2em;
-        }
-        .contact-icon{
-          width: 2.5em;
-        }
-        .source-icon{
-          width: 2em;
-        }
+        // img{
+        //   filter: invert(100%);
+        // }
+        // .home-icon{
+        //   width: 2em;
+        // }
+        // .experience-icon{
+        //   width: 2.5em;
+        // }
+        // .about-icon{
+        //   width: 2em;
+        // }
+        // .contact-icon{
+        //   width: 2.5em;
+        // }
+        // .source-icon{
+        //   width: 2em;
+        // }
         ul{
           
           color: white;
