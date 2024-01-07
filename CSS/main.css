@@ -69,19 +69,15 @@
 
 @media only screen and (min-width: 768px) {
   .hero .show-after.visible {
-    width: 80%;
+    display: flex;
     margin-left: 2em;
-    text-align: center;
     left: 0;
     transform: none;
-  }
-  .hero .show-after.visible .below-info {
-    text-align: left;
+    width: 100%;
   }
   .hero .show-after.visible .contact-me {
     width: 12em;
     text-align: center;
-    left: 0;
   }
   .hero .show-after.visible .school {
     text-align: left;
@@ -305,6 +301,9 @@ h2 {
     width: 50%;
     display: flex;
   }
+  .hero .show-after.visible .below-info {
+    width: 100%;
+  }
   .Intro h1 {
     font-size: 30px;
   }
@@ -327,6 +326,18 @@ h2 {
   padding-top: 2em;
   width: 100%;
   text-align: center;
+  padding: 0.5em;
+  margin-top: 1em;
+  border: 2px solid white;
+  color: white;
+}
+.hero .show-after .text-line .about-me-body {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .show-after iframe {
+  width: 100%;
+  padding-top: 0.5em;
 }
 .hero .chat-cta h2 {
   margin-top: 2em;
@@ -347,7 +358,24 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .hero .show-after .about-me-body {
-    width: 100%;
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .show-after .text-line {
+    padding: 0.5em;
+    margin-top: 1em;
+    border: 2px solid white;
+    color: white;
+    flex-direction: row;
+  }
+  .hero .show-after .chat-cta {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding-left: 4em;
+    padding-right: 2em;
   }
 }
 .hero .projects {
@@ -410,7 +438,7 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .hero .projects {
-    width: 92vw;
+    width: 100vw;
   }
   .hero .projects .group1 {
     justify-content: space-between;
@@ -428,7 +456,7 @@ h2 {
     padding-bottom: 1em;
   }
   .hero .projects .project2 {
-    padding-left: 5em;
+    padding-left: 5vw;
     width: 40%;
     margin: 0;
     display: inline-block;

@@ -66,18 +66,15 @@
 
 @media only screen and (min-width: 768px){
   .hero .show-after.visible {
-    width: 80%;
+    display: flex;
     margin-left: 2em;
-    text-align: center;
     left: 0;
     transform: none;
-    .below-info{
-      text-align: left;
-    }
+    width: 100%;
     .contact-me{
       width: 12em;
       text-align: center;
-      left: 0;
+      
     }
     .school{
       text-align: left;

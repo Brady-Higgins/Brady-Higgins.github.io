@@ -5,7 +5,19 @@
       padding-top: 2em;
       width: 100%;
       text-align: center; 
-      
+      padding: .5em;
+      margin-top: 1em;
+      border: 2px solid white;
+      color: white;
+      .about-me-body{
+        left: 50%;
+        transform: translateX(-50%);
+        
+      }
+    }
+    iframe{
+      width: 100%;
+      padding-top: .5em;
     }
   }
   .chat-cta{
@@ -31,6 +43,25 @@
 
 @media only screen and (min-width: 768px){
   .hero .show-after .about-me-body {
-    width: 100%
-}
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .show-after .text-line{
+    padding: .5em;
+    margin-top: 1em;
+    border: 2px solid white;
+    color: white;
+    flex-direction: row;
+  }
+  .hero .show-after .chat-cta{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    padding-left: 4em;
+    padding-right: 2em;
+    
+  }
+
 }

@@ -85,6 +85,10 @@
      .hero {
       width: 50%;
       display: flex;
+
+      .show-after.visible .below-info{
+          width: 100%;
+      }
      }
      .Intro {
        h1{
@@ -97,6 +101,7 @@
      .Connect{
       margin: 6em 0 2em 0;
       text-align: center;
+      
       .container{
         display: flex;
         flex-direction: column;
