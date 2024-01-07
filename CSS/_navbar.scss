@@ -77,3 +77,70 @@
         }
     }
   }
+
+  @media only screen and (min-width: 768px){
+    .TopNav{
+      .mobile-menu,.mobile-menu-exit{
+          display: none;
+      }
+      .logo{
+        width: 6em;
+      } 
+      .container{
+        width: 100%;
+        
+      }
+      nav{
+        margin-top: 2em;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        img{
+          filter: invert(100%);
+        }
+        .home-icon{
+          width: 2em;
+        }
+        .experience-icon{
+          width: 2.5em;
+        }
+        .about-icon{
+          width: 2em;
+        }
+        .contact-icon{
+          width: 2.5em;
+        }
+        .source-icon{
+          width: 2em;
+        }
+        ul{
+          
+          color: white;
+          display: flex;
+          flex-direction: row;
+        }
+        ul.primary-nav{
+          margin: 0;
+          
+          li{
+            
+            padding-left: 1em;
+            img{
+              float: left;
+            
+            }
+          }
+        }
+        a{
+          font-size: 20px;
+          padding: .1em 1.4em;
+        }
+      }
+    }
+  }

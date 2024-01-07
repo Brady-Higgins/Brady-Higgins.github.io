@@ -62,3 +62,18 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 768px){
+  .hero .show-after.visible{
+    width: 12em;
+    margin-left: 2em;
+    text-align: center;
+    left: 0;
+    transform: none;
+
+    .school{
+      text-align: left;
+    }
+  }
+}

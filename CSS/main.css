@@ -4,6 +4,81 @@
   padding: 0;
 }
 
+.hero {
+  padding: 0;
+  margin: 0;
+}
+.hero .left-column {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 48px;
+  padding: 0;
+  background: #201c1c;
+  color: #ffffff;
+}
+.hero .type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #ffffff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#ffffff 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.24s) steps(var(--n)) forwards;
+}
+@keyframes t {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes b {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.hero .show-after {
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .show-after.visible {
+  margin-top: 1em;
+  display: block;
+  font-size: 30px;
+  color: white;
+  padding: 1em;
+  width: 80%;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .show-after.visible {
+    width: 12em;
+    margin-left: 2em;
+    text-align: center;
+    left: 0;
+    transform: none;
+  }
+  .hero .show-after.visible .school {
+    text-align: left;
+  }
+}
 .TopNav {
   background-color: rgb(24, 24, 24);
 }
@@ -75,69 +150,170 @@ nav li a:hover {
   font-weight: bold;
 }
 
-.hero {
-  padding: 0;
+@media only screen and (min-width: 768px) {
+  .TopNav .mobile-menu, .TopNav .mobile-menu-exit {
+    display: none;
+  }
+  .TopNav .logo {
+    width: 6em;
+  }
+  .TopNav .container {
+    width: 100%;
+  }
+  .TopNav nav {
+    margin-top: 2em;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .TopNav nav img {
+    filter: invert(100%);
+  }
+  .TopNav nav .home-icon {
+    width: 2em;
+  }
+  .TopNav nav .experience-icon {
+    width: 2.5em;
+  }
+  .TopNav nav .about-icon {
+    width: 2em;
+  }
+  .TopNav nav .contact-icon {
+    width: 2.5em;
+  }
+  .TopNav nav .source-icon {
+    width: 2em;
+  }
+  .TopNav nav ul {
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .TopNav nav ul.primary-nav {
+    margin: 0;
+  }
+  .TopNav nav ul.primary-nav li {
+    padding-left: 1em;
+  }
+  .TopNav nav ul.primary-nav li img {
+    float: left;
+  }
+  .TopNav nav a {
+    font-size: 20px;
+    padding: 0.1em 1.4em;
+  }
+}
+* {
+  box-sizing: border-box;
   margin: 0;
-}
-.hero .left-column {
-  margin-top: 1em;
-  width: 100%;
-  text-align: center;
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 48px;
   padding: 0;
-  background: #201c1c;
-  color: #ffffff;
-}
-.hero .type {
-  color: rgba(0, 0, 0, 0);
-  background: linear-gradient(-90deg, #ffffff 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#ffffff 0 0) 0 0;
-  background-size: calc(var(--n) * 1ch) 200%;
-  -webkit-background-clip: padding-box, text;
-  background-clip: padding-box, text;
-  background-repeat: no-repeat;
-  animation: b 0.7s infinite steps(1), t calc(var(--n) * 0.24s) steps(var(--n)) forwards;
-}
-@keyframes t {
-  from {
-    background-size: 0 200%;
-  }
-}
-@keyframes b {
-  50% {
-    background-position: 0 -100%, 0 0;
-  }
-}
-.hero .show-after {
-  display: none;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.hero .show-after.visible {
-  margin-top: 1em;
-  display: block;
-  font-size: 30px;
-  color: white;
-  padding: 1em;
-  width: 80%;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
+.contact-me {
+  width: 100%;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(45, 199, 45);
+  background: rgb(45, 199, 45);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.school {
+  margin-top: 1.5em;
+  box-sizing: content-box;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(106, 104, 104);
+}
+
+h2 {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(106, 104, 104);
+}
+
+.Intro {
+  position: initial;
+  color: white;
+  padding-left: 5%;
+  margin: 25em 0 0 0;
+}
+.Intro h1 {
+  text-decoration: underline;
+}
+.Intro h1 span {
+  color: rgb(45, 199, 45);
+}
+.Intro .text-line {
+  font-size: 20px;
+  margin-top: 0.8em;
+  color: white;
+}
+.Intro .text-line span {
+  font: bold;
+  color: rgb(45, 199, 45);
+}
+
+.Connect {
+  font-size: small;
+  margin: 6em 0 0 2em;
+}
+.Connect h1 {
+  color: white;
+}
+.Connect h1 span {
+  color: rgb(45, 199, 45);
+}
+.Connect ul {
+  display: flex;
+  margin-left: 0;
+}
+.Connect .github-icon {
+  width: 5em;
+}
+.Connect .linkedin-icon {
+  width: 5em;
+  filter: invert(100%);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .left-column {
+    text-align: left;
+    margin-left: 1.8em;
+  }
+  .hero {
+    width: 50%;
+    display: flex;
+  }
+  .Intro h1 {
+    font-size: 30px;
+  }
+  .Intro .text-line {
+    font-size: 22px;
+  }
+  .Connect {
+    margin: 6em 0 2em 0;
+    text-align: center;
+  }
+  .Connect .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .hero .show-after .text-line {
   padding-top: 2em;
   width: 100%;
@@ -216,84 +392,6 @@ nav li a:hover {
 }
 .hero .projects .other-projects span {
   color: rgb(45, 199, 45);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-me {
-  width: 100%;
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 30px;
-  color: rgb(255, 255, 255);
-  border: 5px solid rgb(45, 199, 45);
-  background: rgb(45, 199, 45);
-  text-decoration: none;
-  display: inline-block;
-}
-
-.school {
-  margin-top: 1.5em;
-  box-sizing: content-box;
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 30px;
-  color: rgb(106, 104, 104);
-}
-
-h2 {
-  font-family: monospace;
-  font-weight: 700;
-  font-size: 30px;
-  color: rgb(106, 104, 104);
-}
-
-.Intro {
-  position: initial;
-  color: white;
-  padding-left: 5%;
-  margin: 25em 0 0 0;
-}
-.Intro h1 {
-  text-decoration: underline;
-}
-.Intro h1 span {
-  color: rgb(45, 199, 45);
-}
-.Intro .text-line {
-  font-size: 20px;
-  margin-top: 0.8em;
-  color: white;
-}
-.Intro .text-line span {
-  font: bold;
-  color: rgb(45, 199, 45);
-}
-
-.Connect {
-  font-size: small;
-  margin: 6em 0 0 2em;
-}
-.Connect h1 {
-  color: white;
-}
-.Connect h1 span {
-  color: rgb(45, 199, 45);
-}
-.Connect ul {
-  display: flex;
-  margin-left: 0;
-}
-.Connect .github-icon {
-  width: 5em;
-}
-.Connect .linkedin-icon {
-  width: 5em;
-  filter: invert(100%);
 }
 
 .hero .form {
