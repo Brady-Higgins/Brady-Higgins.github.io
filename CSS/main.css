@@ -94,7 +94,8 @@
 }
 .TopNav .mobile-menu {
   filter: invert(100%);
-  padding: 1em 1em 0 0;
+  margin: 1.5em 0;
+  margin-right: 0.5em;
   width: 10%;
   height: 10%;
   cursor: pointer;
@@ -394,6 +395,27 @@ h2 {
   color: rgb(45, 199, 45);
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    width: 90vw;
+  }
+  .hero .projects .project1 {
+    width: 50%;
+  }
+  .hero .projects .project2 {
+    padding-top: 4em;
+    width: 50%;
+    margin: 0;
+  }
+  .hero .other-projects h2 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 .hero .form {
   padding: 2em;
   margin-top: 1em;
