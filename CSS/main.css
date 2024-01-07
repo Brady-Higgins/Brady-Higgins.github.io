@@ -69,11 +69,19 @@
 
 @media only screen and (min-width: 768px) {
   .hero .show-after.visible {
-    width: 12em;
+    width: 80%;
     margin-left: 2em;
     text-align: center;
     left: 0;
     transform: none;
+  }
+  .hero .show-after.visible .below-info {
+    text-align: left;
+  }
+  .hero .show-after.visible .contact-me {
+    width: 12em;
+    text-align: center;
+    left: 0;
   }
   .hero .show-after.visible .school {
     text-align: left;
@@ -337,6 +345,11 @@ h2 {
   margin-top: 1em;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .show-after .about-me-body {
+    width: 100%;
+  }
+}
 .hero .projects {
   text-align: center;
   color: white;
@@ -397,19 +410,34 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .hero .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 2em;
-    width: 90vw;
+    width: 92vw;
+  }
+  .hero .projects .group1 {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .hero .projects .group1 .project-text {
+    text-align: left;
+    padding-top: 0.5em;
   }
   .hero .projects .project1 {
-    width: 50%;
+    width: 40%;
+    display: inline-block;
+  }
+  .hero .projects .project1 img {
+    padding-bottom: 1em;
   }
   .hero .projects .project2 {
-    padding-top: 4em;
-    width: 50%;
+    padding-left: 5em;
+    width: 40%;
     margin: 0;
+    display: inline-block;
+  }
+  .hero .projects .project2 .project-text {
+    text-align: left;
+  }
+  .hero .projects .project2 img {
+    padding-bottom: 3em;
   }
   .hero .other-projects h2 {
     max-width: 600px;
@@ -464,6 +492,11 @@ h2 {
   width: 3em;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .form {
+    width: 40vw;
+  }
+}
 body {
   background: #201c1c;
   margin: 0;

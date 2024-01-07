@@ -64,21 +64,39 @@
 
 @media only screen and (min-width: 768px){
     .hero{
-    .projects{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 2em;
-        width: 90vw;
         
+    .projects{
+        width: 92vw;
+        
+        .group1{
+            justify-content: space-between;
+            flex-direction: row;
+            .project-text{
+                text-align: left;
+                padding-top: .5em;
+            }
+        }
         .project1{
-            width: 50%;
-            
+            width: 40%;
+            display: inline-block;
+            img{
+                padding-bottom: 1em;
+            }
+            .project-text{
+
+            }
         }
         .project2{
-            padding-top: 4em;
-            width: 50%;
+            padding-left: 5em;
+            width: 40%;
             margin: 0;
+            display: inline-block;
+            .project-text{
+                text-align: left;
+            }
+            img{
+                padding-bottom: 3em;
+            }
             
         }
     }
