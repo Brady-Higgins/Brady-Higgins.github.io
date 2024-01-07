@@ -421,7 +421,7 @@ h2 {
 
 @media only screen and (min-width: 800px) {
   .hero .projects {
-    width: 100vw;
+    width: 90vw;
   }
   .hero .projects .group1 {
     justify-content: space-between;
@@ -439,7 +439,7 @@ h2 {
     padding-bottom: 1em;
   }
   .hero .projects .project2 {
-    padding-left: 5vw;
+    padding-left: 5em;
     width: 40%;
     margin: 0;
     display: inline-block;
