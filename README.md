@@ -1,2 +1,3 @@
 # Brady-Higgins.github.io
-Personal Website
+Personal Website 
+Done with vannila JS, Sass, and HTML.
