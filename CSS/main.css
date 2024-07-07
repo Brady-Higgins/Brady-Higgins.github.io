@@ -361,10 +361,72 @@ h2 {
     padding-right: 2em;
   }
 }
+.hero .work_experience {
+  color: white;
+  padding-left: 5vw;
+  padding-top: 5vh;
+  width: 95vw;
+}
+.hero .work_experience .experience1 {
+  padding-top: 1vh;
+}
+.hero .work_experience .experience1 span {
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .work_experience .experience1 .pearson-text {
+  color: white;
+  padding-top: 1vh;
+}
+.hero .work_experience .experience1 .pearson-text span {
+  font-size: medium;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
+}
+.hero .work_experience .experience1 img {
+  width: 30%;
+}
+.hero .work_experience .experience2 {
+  padding-top: 2vh;
+}
+.hero .work_experience .experience2 span {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .work_experience .experience2 .omnistudy-text {
+  padding-top: 1vh;
+}
+.hero .work_experience .experience2 .omnistudy-text .omnistudy-description {
+  font-size: medium;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
+}
+.hero .work_experience .experience2 .omnistudy-text .omnistudy-link {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  text-decoration: underline;
+}
 .hero .projects {
   text-align: center;
   color: white;
   margin-top: 6em;
+}
+.hero .projects h1 {
+  text-align: center;
+  padding-left: 5vw;
+  color: white;
+}
+.hero .projects .group1 {
+  padding-top: 4vh;
 }
 .hero .projects .project1 span {
   text-decoration: none;
@@ -376,6 +438,12 @@ h2 {
 }
 .hero .projects .project1 img {
   width: 100%;
+}
+.hero .projects .project1 .project-text .gopher_robotics-description {
+  font-size: medium;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
 }
 .hero .projects .project2 {
   margin-top: 10em;
@@ -420,8 +488,14 @@ h2 {
 }
 
 @media only screen and (min-width: 800px) {
+  .hero .work_experience {
+    width: 50vw;
+  }
   .hero .projects {
     width: 90vw;
+  }
+  .hero .projects h1 {
+    text-align: left;
   }
   .hero .projects .group1 {
     justify-content: space-between;

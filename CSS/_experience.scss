@@ -1,9 +1,72 @@
 .hero{
+    .work_experience{
+        color: white;
+        padding-left: 5vw;
+        padding-top: 5vh;
+        width: 95vw;
+        .experience1{
+            span{
+                font-size: x-large;
+                font-weight: bold;
+                text-decoration: underline rgb(45, 199, 45);
+            }
+            padding-top: 1vh;
+            .pearson-text{
+            color: white;
+            padding-top: 1vh;
+            span{
+                font-size: medium;
+                text-decoration: none;
+                font-weight: lighter;
+                font-style: italic;
+            }
+            }
+            img{
+                width: 30%;
+            }
+        }
     
+        .experience2{
+        padding-top: 2vh;
+            span{
+                text-decoration: none;
+                color: white;
+                font-size: x-large;
+                font-weight: bold;
+                text-decoration: underline rgb(45, 199, 45);
+            }
+            .omnistudy-text{
+                padding-top: 1vh;
+                .omnistudy-description{
+                    font-size: medium;
+                    text-decoration: none;
+                    font-weight: lighter;
+                    font-style: italic;
+                }
+                
+                .omnistudy-link{
+                    color: white;
+                    text-decoration: none;
+                    font-size: medium;
+                    text-decoration: underline;
+                }
+                
+                
+            }
+        }
+    }
     .projects{
         text-align: center;
         color: white;
         margin-top: 6em;
+        h1 {
+          text-align: center;
+          padding-left: 5vw;
+          color: white;  
+        }
+        .group1{
+            padding-top: 4vh;
+        }
         .project1{
             span{
                 text-decoration: none;
@@ -14,6 +77,14 @@
             }
             img{
                 width: 100%;
+            }
+            .project-text{
+                .gopher_robotics-description{
+                    font-size: medium;
+                    text-decoration: none;
+                    font-weight: lighter;
+                    font-style: italic;
+                }
             }
         }
         .project2{
@@ -64,8 +135,13 @@
 
 @media only screen and (min-width: 800px){
     .hero{
-        
+    .work_experience{
+        width: 50vw;
+    }
     .projects{
+        h1{
+            text-align: left;
+        }
         width: 90vw;
         .group1{
             justify-content: space-between;
