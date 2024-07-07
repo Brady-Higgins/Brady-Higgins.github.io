@@ -490,6 +490,7 @@ h2 {
 @media only screen and (min-width: 800px) {
   .hero .work_experience {
     width: 50vw;
+    font-size: large;
   }
   .hero .projects {
     width: 90vw;
