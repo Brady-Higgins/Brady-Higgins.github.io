@@ -438,6 +438,7 @@ h2 {
 }
 .hero .projects .project1 img {
   width: 100%;
+  margin-bottom: 8em;
 }
 .hero .projects .project1 .project-text .gopher_robotics-description {
   font-size: medium;
