@@ -11,6 +11,13 @@
   -webkit-text-decoration: underline rgb(45, 199, 45);
           text-decoration: underline rgb(45, 199, 45);
 }
+.hero .projects .project1 span a {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(45, 199, 45);
+}
 .hero .projects .project1 img {
   width: 100%;
 }
@@ -51,11 +58,6 @@
   margin-left: 1em;
   width: 5em;
   filter: invert(100%);
-}
-a[href*="omnistudy"] {
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: green;
 }
 .hero .projects .other-projects span {
   color: rgb(45, 199, 45);
