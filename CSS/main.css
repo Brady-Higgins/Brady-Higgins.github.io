@@ -389,6 +389,28 @@ h2 {
 .hero .work_experience .experience1 img {
   width: 30%;
 }
+.hero .work_experience .experience3 {
+  padding-top: 1vh;
+}
+.hero .work_experience .experience3 span {
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-decoration: underline rgb(45, 199, 45);
+          text-decoration: underline rgb(45, 199, 45);
+}
+.hero .work_experience .experience3 .UBC-text {
+  color: white;
+  padding-top: 1vh;
+}
+.hero .work_experience .experience3 .UBC-text span {
+  font-size: medium;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
+}
+.hero .work_experience .experience3 img {
+  width: 30%;
+}
 .hero .work_experience .experience2 {
   padding-top: 2vh;
 }
