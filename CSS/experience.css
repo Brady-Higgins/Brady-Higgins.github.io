@@ -52,6 +52,11 @@
   width: 5em;
   filter: invert(100%);
 }
+a[href*="omnistudy"] {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: green;
+}
 .hero .projects .other-projects span {
   color: rgb(45, 199, 45);
 }/*# sourceMappingURL=experience.css.map */
