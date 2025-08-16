@@ -4,13 +4,31 @@
         padding-left: 5vw;
         padding-top: 5vh;
         width: 95vw;
-        .experience1{
+        .experience1, .experience2, .experience3 {
             span{
                 font-size: x-large;
                 font-weight: bold;
-                text-decoration: underline rgb(45, 199, 45);
+                text-decoration: underline rgb(45, 199, 45);                
             }
             padding-top: 1vh;
+        }
+        .experience1{
+
+            .hashicorp-text{
+            color: white;
+            padding-top: 1vh;
+            span{
+                font-size: medium;
+                text-decoration: none;
+                font-weight: lighter;
+                font-style: italic;
+            }
+            }
+            img{
+                width: 30%;
+            }
+        }
+        .experience2{
             .pearson-text{
             color: white;
             padding-top: 1vh;
@@ -26,12 +44,6 @@
             }
         }
         .experience3{
-            span{
-                font-size: x-large;
-                font-weight: bold;
-                text-decoration: underline rgb(45, 199, 45);
-            }
-            padding-top: 1vh;
             .UBC-text{
             color: white;
             padding-top: 1vh;
@@ -46,7 +58,7 @@
                 width: 30%;
             }
         }
-        .experience2{
+        .experience4{
         padding-top: 2vh;
             span{
                 text-decoration: none;

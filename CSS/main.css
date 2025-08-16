@@ -367,20 +367,20 @@ h2 {
   padding-top: 5vh;
   width: 95vw;
 }
-.hero .work_experience .experience1 {
+.hero .work_experience .experience1, .hero .work_experience .experience2, .hero .work_experience .experience3 {
   padding-top: 1vh;
 }
-.hero .work_experience .experience1 span {
+.hero .work_experience .experience1 span, .hero .work_experience .experience2 span, .hero .work_experience .experience3 span {
   font-size: x-large;
   font-weight: bold;
   -webkit-text-decoration: underline rgb(45, 199, 45);
           text-decoration: underline rgb(45, 199, 45);
 }
-.hero .work_experience .experience1 .pearson-text {
+.hero .work_experience .experience1 .hashicorp-text {
   color: white;
   padding-top: 1vh;
 }
-.hero .work_experience .experience1 .pearson-text span {
+.hero .work_experience .experience1 .hashicorp-text span {
   font-size: medium;
   text-decoration: none;
   font-weight: lighter;
@@ -389,14 +389,18 @@ h2 {
 .hero .work_experience .experience1 img {
   width: 30%;
 }
-.hero .work_experience .experience3 {
+.hero .work_experience .experience2 .pearson-text {
+  color: white;
   padding-top: 1vh;
 }
-.hero .work_experience .experience3 span {
-  font-size: x-large;
-  font-weight: bold;
-  -webkit-text-decoration: underline rgb(45, 199, 45);
-          text-decoration: underline rgb(45, 199, 45);
+.hero .work_experience .experience2 .pearson-text span {
+  font-size: medium;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
+}
+.hero .work_experience .experience2 img {
+  width: 30%;
 }
 .hero .work_experience .experience3 .UBC-text {
   color: white;
@@ -411,10 +415,10 @@ h2 {
 .hero .work_experience .experience3 img {
   width: 30%;
 }
-.hero .work_experience .experience2 {
+.hero .work_experience .experience4 {
   padding-top: 2vh;
 }
-.hero .work_experience .experience2 span {
+.hero .work_experience .experience4 span {
   text-decoration: none;
   color: white;
   font-size: x-large;
@@ -422,16 +426,16 @@ h2 {
   -webkit-text-decoration: underline rgb(45, 199, 45);
           text-decoration: underline rgb(45, 199, 45);
 }
-.hero .work_experience .experience2 .omnistudy-text {
+.hero .work_experience .experience4 .omnistudy-text {
   padding-top: 1vh;
 }
-.hero .work_experience .experience2 .omnistudy-text .omnistudy-description {
+.hero .work_experience .experience4 .omnistudy-text .omnistudy-description {
   font-size: medium;
   text-decoration: none;
   font-weight: lighter;
   font-style: italic;
 }
-.hero .work_experience .experience2 .omnistudy-text .omnistudy-link {
+.hero .work_experience .experience4 .omnistudy-text .omnistudy-link {
   color: white;
   text-decoration: none;
   font-size: medium;
