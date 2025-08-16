@@ -100,7 +100,6 @@
             padding-top: 4vh;
         }
         .project1{
-            
             span{
                 text-decoration: none;
                 color: white;
@@ -113,7 +112,7 @@
                 margin-bottom: 8em;
             }
             .project-text{
-                .gopher_robotics-description{
+                .omnistudy-description{
                     font-size: medium;
                     text-decoration: none;
                     font-weight: lighter;
@@ -132,6 +131,32 @@
             }
             img{
                 width: 100%;
+                
+            }
+        }
+        .project3{
+            width: 50%;
+            margin-top: 10em;
+            padding-left: 8em;
+            text-align: left;
+            span{
+                text-decoration: none;
+                color: white;
+                font-size: x-large;
+                font-weight: bold;
+                text-decoration: underline rgb(45, 199, 45);
+            }
+            img{
+                width: 100%;
+                margin-bottom: 8em;
+            }
+            .project-text{
+                .gopher_robotics-description{
+                    font-size: medium;
+                    text-decoration: none;
+                    font-weight: lighter;
+                    font-style: italic;
+                }
             }
         }
         .other-projects{
